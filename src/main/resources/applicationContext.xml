@@ -13,7 +13,9 @@
 
     <bean id="musicPlayer"
         class="com.totgor.MusicPlayer">
-        <constructor-arg ref="musicBean"/>
+        <property name="music" ref="musicBean"/>
+        <property name="name" value="Какое нибудь плеера"/>
+        <property name="volume" value="50"/>
     </bean>
 
 </beans>
