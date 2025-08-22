@@ -10,7 +10,9 @@
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
 
     <bean id="musicBean"
-        class="com.totgor.ClassicalMusic">
+        class="com.totgor.ClassicalMusic"
+        init-method="initMethod"
+        destroy-method="destroyMethod">
     </bean>
 
     <bean id="musicPlayer"
