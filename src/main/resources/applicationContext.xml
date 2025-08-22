@@ -11,6 +11,7 @@
 
     <bean id="musicBean"
         class="com.totgor.ClassicalMusic"
+        scope="prototype"
         init-method="initMethod"
         destroy-method="destroyMethod">
     </bean>
