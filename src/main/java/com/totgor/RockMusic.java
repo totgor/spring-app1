@@ -2,7 +2,7 @@ package com.totgor;
 
 import org.springframework.stereotype.Component;
 
-@Component("musicBean") //Анотация для Spring для создания бина класса RockMusic c id musicBean
+@Component
 public class RockMusic implements Music {
 
     @Override
