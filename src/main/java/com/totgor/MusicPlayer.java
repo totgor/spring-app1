@@ -8,8 +8,12 @@ public class MusicPlayer {
     
     private Music music;
     
-    @Autowired
     public MusicPlayer(Music music) {
+        this.music = music;
+    }
+
+    @Autowired
+    public void setMusic(Music music) {
         this.music = music;
     }
 
