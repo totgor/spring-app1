@@ -1,13 +1,10 @@
 package com.totgor;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class TestSpring {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(
-                "applicationContext.xml"
-        );
-
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringConfiguration.class);
         // Computer computer = applicationContext.getBean("computer", Computer.class);
         // System.out.println(computer);
 
